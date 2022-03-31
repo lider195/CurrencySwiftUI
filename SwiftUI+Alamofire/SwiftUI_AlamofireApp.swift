@@ -1,17 +1,13 @@
-//
-//  SwiftUI_AlamofireApp.swift
-//  SwiftUI+Alamofire
-//
-//  Created by Vadim on 26.03.22.
-//
-
 import SwiftUI
 
 @main
 struct SwiftUI_AlamofireApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CurrencyView(viewModel: CoinClientModels(currencyCoin: "BTC",
+                                                     priceCoin: 123.2,
+                                                     name: "Bitcoin",
+                                                     count: "1.0"))
         }
     }
 }

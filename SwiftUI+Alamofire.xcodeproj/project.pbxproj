@@ -8,17 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		DDC4077827EF2CE000974911 /* SwiftUI_AlamofireApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4077727EF2CE000974911 /* SwiftUI_AlamofireApp.swift */; };
-		DDC4077A27EF2CE000974911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4077927EF2CE000974911 /* ContentView.swift */; };
+		DDC4077A27EF2CE000974911 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4077927EF2CE000974911 /* CurrencyView.swift */; };
 		DDC4077C27EF2CE400974911 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC4077B27EF2CE400974911 /* Assets.xcassets */; };
 		DDC4077F27EF2CE400974911 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC4077E27EF2CE400974911 /* Preview Assets.xcassets */; };
+		DDC4078727EF2EA400974911 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DDC4078627EF2EA400974911 /* Alamofire */; };
+		DDC4078C27EF31D700974911 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4078B27EF31D700974911 /* ApiManager.swift */; };
+		DDC4078E27EF32F000974911 /* CoinServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4078D27EF32F000974911 /* CoinServerModel.swift */; };
+		DDC4079027EF330C00974911 /* CoinClientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4078F27EF330C00974911 /* CoinClientModel.swift */; };
+		DDC4079227EF333400974911 /* ModelConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4079127EF333400974911 /* ModelConverter.swift */; };
+		DDC4079427EF5A7D00974911 /* CurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4079327EF5A7D00974911 /* CurrencyCell.swift */; };
+		DDC4079627EF673300974911 /* ConverterCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC4079527EF673200974911 /* ConverterCoins.swift */; };
+		DDC6F74B27F1E05E008C1927 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6F74A27F1E05E008C1927 /* LoadingView.swift */; };
+		DDC6F74D27F1E1FB008C1927 /* ViewBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC6F74C27F1E1FB008C1927 /* ViewBuilders.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDC4077427EF2CE000974911 /* SwiftUI+Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI+Alamofire.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDC4077727EF2CE000974911 /* SwiftUI_AlamofireApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_AlamofireApp.swift; sourceTree = "<group>"; };
-		DDC4077927EF2CE000974911 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DDC4077927EF2CE000974911 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		DDC4077B27EF2CE400974911 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC4077E27EF2CE400974911 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DDC4078B27EF31D700974911 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		DDC4078D27EF32F000974911 /* CoinServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinServerModel.swift; sourceTree = "<group>"; };
+		DDC4078F27EF330C00974911 /* CoinClientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinClientModel.swift; sourceTree = "<group>"; };
+		DDC4079127EF333400974911 /* ModelConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelConverter.swift; sourceTree = "<group>"; };
+		DDC4079327EF5A7D00974911 /* CurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCell.swift; sourceTree = "<group>"; };
+		DDC4079527EF673200974911 /* ConverterCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConverterCoins.swift; sourceTree = "<group>"; };
+		DDC6F74A27F1E05E008C1927 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		DDC6F74C27F1E1FB008C1927 /* ViewBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBuilders.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC4078727EF2EA400974911 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +69,10 @@
 		DDC4077627EF2CE000974911 /* SwiftUI+Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				DDC4077727EF2CE000974911 /* SwiftUI_AlamofireApp.swift */,
-				DDC4077927EF2CE000974911 /* ContentView.swift */,
+				DDC4078A27EF31B400974911 /* ApiManager */,
+				DDC4078827EF2F0E00974911 /* View */,
 				DDC4077B27EF2CE400974911 /* Assets.xcassets */,
+				DDC4077727EF2CE000974911 /* SwiftUI_AlamofireApp.swift */,
 				DDC4077D27EF2CE400974911 /* Preview Content */,
 			);
 			path = "SwiftUI+Alamofire";
@@ -65,6 +84,37 @@
 				DDC4077E27EF2CE400974911 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DDC4078827EF2F0E00974911 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DDC6F74A27F1E05E008C1927 /* LoadingView.swift */,
+				DDC6F74C27F1E1FB008C1927 /* ViewBuilders.swift */,
+				DDC4078927EF2F1D00974911 /* CurrencyList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DDC4078927EF2F1D00974911 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				DDC4077927EF2CE000974911 /* CurrencyView.swift */,
+				DDC4079327EF5A7D00974911 /* CurrencyCell.swift */,
+				DDC4079527EF673200974911 /* ConverterCoins.swift */,
+			);
+			path = CurrencyList;
+			sourceTree = "<group>";
+		};
+		DDC4078A27EF31B400974911 /* ApiManager */ = {
+			isa = PBXGroup;
+			children = (
+				DDC4078B27EF31D700974911 /* ApiManager.swift */,
+				DDC4078D27EF32F000974911 /* CoinServerModel.swift */,
+				DDC4078F27EF330C00974911 /* CoinClientModel.swift */,
+				DDC4079127EF333400974911 /* ModelConverter.swift */,
+			);
+			path = ApiManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI+Alamofire";
+			packageProductDependencies = (
+				DDC4078627EF2EA400974911 /* Alamofire */,
+			);
 			productName = "SwiftUI+Alamofire";
 			productReference = DDC4077427EF2CE000974911 /* SwiftUI+Alamofire.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +164,9 @@
 				Base,
 			);
 			mainGroup = DDC4076B27EF2CE000974911;
+			packageReferences = (
+				DDC4078527EF2EA400974911 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = DDC4077527EF2CE000974911 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +193,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC4077A27EF2CE000974911 /* ContentView.swift in Sources */,
+				DDC6F74D27F1E1FB008C1927 /* ViewBuilders.swift in Sources */,
+				DDC4077A27EF2CE000974911 /* CurrencyView.swift in Sources */,
+				DDC4079027EF330C00974911 /* CoinClientModel.swift in Sources */,
+				DDC4078E27EF32F000974911 /* CoinServerModel.swift in Sources */,
+				DDC4079627EF673300974911 /* ConverterCoins.swift in Sources */,
+				DDC4078C27EF31D700974911 /* ApiManager.swift in Sources */,
+				DDC4079427EF5A7D00974911 /* CurrencyCell.swift in Sources */,
+				DDC4079227EF333400974911 /* ModelConverter.swift in Sources */,
 				DDC4077827EF2CE000974911 /* SwiftUI_AlamofireApp.swift in Sources */,
+				DDC6F74B27F1E05E008C1927 /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DDC4078527EF2EA400974911 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DDC4078627EF2EA400974911 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DDC4078527EF2EA400974911 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DDC4076C27EF2CE000974911 /* Project object */;
 }
